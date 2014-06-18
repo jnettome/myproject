@@ -108,4 +108,9 @@ Route::get('{postSlug}', 'BlogController@getView');
 Route::post('{postSlug}', 'BlogController@postView');
 
 # Index Page - Last route, no matches
-Route::get('/', array('before' => 'detectLang','uses' => 'BlogController@getIndex'));
+# Contact Us Static Page
+Route::get('/', function()
+{
+    // Return about us page
+    return View::make('site/home');
+});

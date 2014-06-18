@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Basic Page Needs
-		================================================== -->
 		<meta charset="utf-8" />
 		<title>
 			@section('title')
-			Laravel 4 Sample Site
+			NOME DO PROJETO
 			@show
 		</title>
 		<meta name="keywords" content="your, awesome, keywords, here" />
@@ -48,7 +46,7 @@
 		<!-- To make sticky footer need to wrap in a div -->
 		<div id="wrap">
 		<!-- Navbar -->
-		<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-default navbar-fixed-top">
 			 <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -66,13 +64,13 @@
                     <ul class="nav navbar-nav pull-right">
                         @if (Auth::check())
                         @if (Auth::user()->hasRole('admin'))
-                        <li><a href="{{{ URL::to('admin') }}}">Admin Panel</a></li>
+                        <li><a href="{{{ URL::to('admin') }}}">Admin</a></li>
                         @endif
-                        <li><a href="{{{ URL::to('user') }}}">Logged in as {{{ Auth::user()->username }}}</a></li>
-                        <li><a href="{{{ URL::to('user/logout') }}}">Logout</a></li>
+                        <li><a href="{{{ URL::to('user') }}}">Logado como {{{ Auth::user()->username }}}</a></li>
+                        <li><a href="{{{ URL::to('user/logout') }}}">Sair</a></li>
                         @else
-                        <li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}">Login</a></li>
-                        <li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}">{{{ Lang::get('site.sign_up') }}}</a></li>
+                        <li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}">Entrar</a></li>
+                        <li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}">Cadastre-se</a></li>
                         @endif
                     </ul>
 					<!-- ./ nav-collapse -->
@@ -101,7 +99,7 @@
 
 	    <div id="footer">
 	      <div class="container">
-	        <p class="muted credit">Laravel 4 Starter Site on <a href="https://github.com/andrew13/Laravel-4-Bootstrap-Starter-Site">Github</a>.</p>
+	        <p class="muted credit">&copy; 2014 All rights reserved</p>
 	      </div>
 	    </div>
 

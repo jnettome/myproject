@@ -2,6 +2,11 @@
 
 Diving into Laravel.
 
+        Cada usuário pode criar sua conta - ok 
+        Esse usuário poderá escolher entre cadastrar produtos ou serviços que ele presta para outras pessoas.
+        O usuário tem a possibilidade de cadastrar termos e condições para acrescentar no orçamento depois. 
+        Após esse cadastro é disponibilizado para ele a opção de gerar um orçamento para o cliente dele, baseado nos produtos e páginas de termos criados
+
 ## Features
 
 * Bootstrap 3.x
